@@ -6,4 +6,7 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
 
-Post.create(title: "First post", body: "This is the body and I'm going to keep typing just so we can have some preview.")
+Post.create(title: "First post", body: "This is the body and I'm going to keep typing just so we can have some preview.", category_id: 1)
+Category.create(name: "Fitness")
+Category.create(name: "Personal")
+Category.create(name: "Web development")

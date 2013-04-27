@@ -1,6 +1,6 @@
 <% for post in @posts %>
 <div class="post">
 	<h2><%= link_to post.title, post_path(post) %></h2>
-	<small><%= post.created_at.strftime("%d %b. %Y") %></small>
+	<small><%= post.created_at.strftime("%d %b. %Y") %> in <%= link_to post.category.name, category_path(post.category) %></small>
 </div>
 <% end  %>
