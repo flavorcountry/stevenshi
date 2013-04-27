@@ -4,6 +4,7 @@ gem 'rails', '3.2.12'
 gem 'json'
 
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 
 # Gems used only for assets and not required
 # in production environments by default.
