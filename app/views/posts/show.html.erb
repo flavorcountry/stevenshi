@@ -1,0 +1,10 @@
+<div class="entry">
+	<h1><%= @post.title %>
+		<span class="tagline"><%= @post.created_at.strftime("%d %b. %Y") %> in
+			<%= link_to @post.category.name, category_path(@post.category) %></span>
+	</h1>
+	<div>
+		<p><%= @post.body %></p>
+
+	</div>
+</div>

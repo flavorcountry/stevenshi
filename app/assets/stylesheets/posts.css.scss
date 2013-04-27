@@ -12,7 +12,7 @@ ul {
 }
 
 .head {
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 15%;
@@ -79,4 +79,13 @@ a {
 
 .nav a:hover {
 	color: white;
+}
+
+.entry {
+	text-align: justify;
+}
+
+.tagline {
+	font-size: 0.5em;
+	letter-spacing: 1.1px;
 }
