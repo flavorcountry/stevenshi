@@ -1,0 +1,6 @@
+<% for p in @portfolio %>
+	<div class="portfolio">
+		<h2><%= link_to p.name, p.url %></h2>
+		<p><%= p.description.html_safe %></p>
+	</div>
+<% end %>
