@@ -82,13 +82,17 @@ a {
 	color: white;
 }
 
-.entry {
+.entry p {
 	text-align: justify;
 	width: 70%;
+	line-height: 1.5;
+	a {
+		color: #2ecc71;
+	}
 }
 
 br {
-	line-height: 150%;
+	line-height: 300%;
 }
 
 .tagline {
