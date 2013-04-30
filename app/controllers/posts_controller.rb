@@ -20,4 +20,19 @@ class PostsController < ApplicationController
   		redirect_to root_path, error: "Nope."
   	end
   end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    password = params[:post].delete('password')
+    if User.first.authenticate(password)
+      @post.update_attributes(params[:post])
+      redirect_to root_path
+    else
+      redirect_to root_path, error: "Nope."
+    end
+  end
 end
