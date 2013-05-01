@@ -4,7 +4,7 @@
 			<%= link_to @post.category.name, category_path(@post.category) %></span>
 	</h1>
 	<div>
-		<p><%= @post.body.html_safe %></p>
+		<p><%= simple_format @post.body.html_safe %></p>
 
 	</div>
 </div>
