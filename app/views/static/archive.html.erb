@@ -1,0 +1,8 @@
+<% @posts_by_month.each do |monthname, posts| %>
+<%= monthname %>
+<ul class="archive-month">
+   <% posts.each do |post| %>
+     <li><%= link_to post.title, post_path(post) %></li>
+   <% end %>
+</ul>
+<% end %>
