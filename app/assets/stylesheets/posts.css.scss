@@ -14,6 +14,34 @@ ul {
 	left: 5%;
 }
 
+@media only screen and (max-width: 860px) {
+    .profile {
+        display: none;
+    }
+
+    .wrap > ul {
+    	display: none;
+    }
+
+    .head {
+    	width: 100% !important;
+    	height: 10% !important;
+    }
+
+    .nav > ul > li {
+    	display: inline;
+    }
+
+    .nav {
+    	padding-top: 0px !important;
+    	margin-top: -20px !important;
+    }
+
+    .main {
+    	padding-top: 15% !important;
+    }
+}
+
 .head {
 	position: fixed;
 	top: 0px;
