@@ -1,7 +1,7 @@
 <% @posts_by_month.each do |monthname, posts| %>
 <%= monthname %>
 <ul class="archive-month">
-	<% posts = posts.sort_by { |k| k['created_at'] } %>
+	<% posts = posts.sort_by { |k| k['created_at'] }.reverse %>
    <% posts.each do |post| %>
      <li><%= link_to post.title, post_path(post) %></li>
    <% end %>
