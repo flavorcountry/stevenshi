@@ -3,7 +3,7 @@
 <ul class="archive-month">
 	<% posts = posts.sort_by { |k| k['created_at'] }.reverse %>
    <% posts.each do |post| %>
-     <li><%= link_to post.title, post_path(post) %></li>
+     <li><%= link_to post.title, post_path(post) %> <small><%= post.created_at.strftime("%b %d") %></small></li>
    <% end %>
 </ul>
 <% end %>
