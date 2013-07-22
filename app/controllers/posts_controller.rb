@@ -30,9 +30,9 @@ class PostsController < ApplicationController
     password = params[:post].delete('password')
     if User.first.authenticate(password)
       @post.update_attributes(params[:post])
-      redirect_to root_path
+      redirect_to post_path(@post)
     else
-      redirect_to root_path, error: "Nope."
+      redirect_to post_path(@post), error: "Nope."
     end
   end
 end
