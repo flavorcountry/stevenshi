@@ -4,7 +4,7 @@
 			<%= link_to @post.category.name, category_path(@post.category) %></span>
 	</h1>
 	<div>
-		<%= simple_format @post.body.html_safe %>
+		<%= simple_format(@post.body, {}, {sanitize: false}) %>
 	</div>
 
 	 <div id="disqus_thread"></div>
